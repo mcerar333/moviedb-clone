@@ -1,0 +1,110 @@
+.heading-1 {
+  grid-column: sidebar-start / movies-end;
+
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 2.56rem;
+
+  @include respond(l) {
+    grid-column: 1 / -1;
+  }
+}
+
+.heading-2 {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.76rem;
+}
+
+.heading-3 {
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.heading-4 {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+%error {
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-alert);
+}
+.error--genres {
+  @extend %error;
+  font-size: 1.8rem;
+}
+.error--movies {
+  @extend %error;
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.92rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  color: var(--color-white);
+  background-color: var(--color-primary-light);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--color-primary);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    color: var(--color-grey-dark-2);
+    background-color: var(--color-grey-light-2);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--color-grey-light-2);
+    }
+  }
+
+  &--outline {
+    font-weight: 400;
+    font-size: 1.44rem;
+    padding: 0.4rem 1.2rem;
+    color: var(--color-black);
+    background-color: transparent;
+    border: 1px solid var(--color-grey-dark-3);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: var(--color-white);
+      border-color: var(--color-primary-light);
+      background-color: var(--color-primary-light);
+    }
+  }
+
+  &--load {
+    font-weight: 700;
+    font-size: 2.4rem;
+    border-radius: 0.8rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-primary);
+      background-color: var(--color-primary-light);
+    }
+  }
+}
+
+.mb-sm {
+  margin-bottom: 1.2rem;
+}

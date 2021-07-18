@@ -1,0 +1,20 @@
+.header {
+  grid-column: full-start / full-end;
+
+  padding: 2.2rem 4rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+
+  @include respond(m) {
+    padding: 2.2rem;
+  }
+
+  &__nav {
+    margin: 0 auto;
+    max-width: 132rem;
+
+    img {
+      height: 2rem;
+    }
+  }
+}

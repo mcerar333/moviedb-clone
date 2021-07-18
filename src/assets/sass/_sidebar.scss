@@ -1,0 +1,67 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(l) {
+    grid-column: 1 / -1;
+    margin-bottom: 0.8rem;
+  }
+
+  &__details {
+    padding: 1.4rem 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: var(--shadow-small);
+    border: 1px solid var(--color-grey-light-3);
+
+    &[open] summary svg {
+      color: currentColor;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__summary {
+    outline: none;
+    cursor: pointer;
+    list-style: none;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
+    }
+
+    &::marker {
+      display: none;
+    }
+  }
+
+  &__genres {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      height: 1px;
+      left: -1.6rem;
+      width: calc(100% + 3.2rem);
+      background-color: var(--color-grey-light-3);
+    }
+  }
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.8rem;
+  column-gap: 0.6rem;
+}

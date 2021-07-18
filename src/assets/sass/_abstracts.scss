@@ -1,0 +1,42 @@
+:root {
+  --color-primary: hsl(207, 91%, 13%);
+  --color-primary-light: hsl(193, 99%, 45%);
+
+  --color-secondary: hsl(163, 83%, 64%);
+  --color-secondary-dark: hsla(163, 83%, 64%, 0.3);
+
+  --color-alert: hsl(0, 100%, 66%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-grey-light-1: hsl(0, 0%, 89%);
+  --color-grey-light-2: hsla(0, 0%, 89%, 0.7);
+  --color-grey-light-3: hsl(0, 0%, 85%);
+  --color-grey-light-4: hsl(0, 0%, 80%);
+
+  --color-grey-dark-3: hsl(0, 0%, 60%);
+  --color-grey-dark-2: hsla(0, 0%, 0%, 0.5);
+  --color-grey-dark-1: hsla(0, 0%, 0%, 0.6);
+
+  --color-black: hsl(0, 0%, 0%);
+
+  --shadow-small: 0 0.2rem 0.8rem hsla(0, 0%, 0%, 0.1);
+
+  --font-primary: 'Source Sans Pro', Arial, sans-serif;
+}
+
+$bp-large: 50em; // 800px
+$bp-medium: 28.125em; // 450px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == l {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+  @if $breakpoint == m {
+    @media only screen and (max-width: $bp-medium) {
+      @content;
+    }
+  }
+}

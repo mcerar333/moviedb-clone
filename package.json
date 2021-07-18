@@ -1,0 +1,30 @@
+{
+  "name": "moviedb-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.15.2",
+    "nprogress": "^1.0.0-1",
+    "vue": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "@vue/cli-plugin-babel": "~5.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "~5.0.0-beta.2",
+    "@vue/cli-service": "~5.0.0-beta.2",
+    "@vue/compiler-sfc": "^3.1.5",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.14.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0"
+  }
+}

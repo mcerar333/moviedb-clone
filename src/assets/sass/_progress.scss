@@ -1,0 +1,24 @@
+$nprogress-height: 4px !default;
+
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $nprogress-height;
+    background: var(--color-primary-light);
+    z-index: 1031;
+  }
+}
+
+.nprogress-custom-parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
