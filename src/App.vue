@@ -4,7 +4,7 @@
   <aside class="sidebar">
     <details class="sidebar__details">
       <summary class="sidebar__summary">
-        <h3 class="heading-2">Filters</h3>
+        <h2 class="heading-2">Filters</h2>
         <svg>
           <use href="/img/sprite.svg#icon-chevron-right"></use>
         </svg>
