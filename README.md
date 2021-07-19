@@ -6,6 +6,17 @@
 
 <h1 align="center">The Movie Database Mini Clone</h1>
 
-### Link:
+### Tech:
 
-**https://themoviedbclone.netlify.app/**
+- CSS Preprocessor: [Sass](https://sass-lang.com/)
+- JS Framework: [Vue v3](https://v3.vuejs.org/)
+- The Composition API
+
+### API:
+
+- The Movie Database API: [Docs](https://www.themoviedb.org/documentation/api)
+
+### Links:
+
+**Original: https://www.themoviedb.org/movie**
+**Clone: https://themoviedbclone.netlify.app/**
