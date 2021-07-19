@@ -24,15 +24,14 @@
     outline: none;
     cursor: pointer;
     list-style: none;
-    backface-visibility: hidden;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     svg {
       width: 2rem;
       height: 2rem;
+      margin-left: auto;
       fill: currentColor;
       transition: transform 0.1s linear;
     }
