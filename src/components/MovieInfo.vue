@@ -5,7 +5,7 @@
     <div class="movie__rating">{{ movie.rating }}<span>%</span></div>
 
     <div class="movie__info">
-      <h3 class="heading-3">{{ movie.title }}</h3>
+      <h4 class="heading-4">{{ movie.title }}</h4>
       <p class="movie__date">{{ movie.date }}</p>
     </div>
   </div>

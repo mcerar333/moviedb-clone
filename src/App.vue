@@ -11,7 +11,7 @@
       </summary>
 
       <div class="sidebar__genres">
-        <h4 class="heading-4 mb-sm">Genres</h4>
+        <h3 class="heading-3 mb-sm">Genres</h3>
 
         <div v-if="errGenre" class="genres">
           <p class="error--genres">{{ errGenre }}</p>
