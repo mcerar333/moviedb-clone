@@ -25,7 +25,6 @@
     cursor: pointer;
     list-style: none;
     backface-visibility: hidden;
-    transition: transform 0.5s;
 
     display: flex;
     align-items: center;
@@ -35,8 +34,10 @@
       width: 2rem;
       height: 2rem;
       fill: currentColor;
+      transition: transform 0.1s linear;
     }
 
+    &::-webkit-details-marker,
     &::marker {
       display: none;
     }
